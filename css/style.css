@@ -1,0 +1,134 @@
+body {
+    font-family: 'Montserrat';
+    
+}
+
+#title {
+    background-color: #125D98;
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+h3, h5 {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+    line-height: 200%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar-item {
+    padding: 0 18px;
+}
+
+nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+
+/* Contact Buttons */
+
+.contact-buttons {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+
+.title-image {
+    width: 60%;
+}
+
+#skills {
+    text-align: center;
+    padding: 7% 15%;
+}
+
+#skill-item {
+    text-align: center;
+    padding: 5%;
+}
+.skill-images {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+.skill-title, #about-me {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'ubuntu';
+    color: #125D98;
+}
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+    }
+}
+
+#footer {
+    background-color: #125D98;
+    text-align: center;
+    /* padding: 3% 15%; */
+}
+.social-handle {
+    color: #fff;
+    margin: 20px 10px;
+    width: 10%;
+}
+
+.project-title {
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'ubuntu';
+    color: #fff;
+}
+#about-me {
+    padding: 3% 15%;
+}
+.card-title {
+    padding-top: 15%;
+    font-weight: 900;
+}
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#projects {
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #125D98;
+}
