@@ -61,10 +61,86 @@
       <div class="row">
         <div class="col-lg-6">
           <h1>Hello, World.</h1>
-          <h3>I'm Edwin, a Software Engineer.</h3>
-          <button type="button" class="btn btn-outline-light btn-lg contact-buttons"><i
+          <h3>I'm Edwin, a Software Engineer | Pen Tester.</h3>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title" id="exampleModalLabel">Contact Me</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <!-- Wrapper container -->
+                  <div class="container py-4">
+
+                    <!-- Bootstrap 5 starter form -->
+                    <form id="contactForm">
+
+                      <!-- Name input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" placeholder="Name"
+                          data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                      </div>
+
+                      <!-- Email address input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="emailAddress">Email Address</label>
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                          data-sb-validations="required, email" />
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is
+                          required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not
+                          valid.</div>
+                      </div>
+
+                      <!-- Message input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" type="text" placeholder="Message"
+                          style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                      </div>
+
+                      <!-- Form submissions success message -->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">Form submission successful!</div>
+                      </div>
+
+                      <!-- Form submissions error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+
+                      <!-- Form submit button -->
+                      <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                      </div>
+
+                    </form>
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <button type="button" class="btn btn-outline-light btn-lg contact-buttons"><i
               class="fa-solid fa-envelope"></i> Contact
-            Me</button>
+            Me</button> -->
           <!-- <button type="button" class="btn btn-outline-light btn-lg contact-buttons"><i
               class="fa-solid fa-briefcase"></i> Hire
             Me</button> -->
@@ -85,7 +161,7 @@
       <div class="skill-item col-lg-4">
         <div class="shadow p-3 mb-5 bg-body rounded">
           <img class="skill-images" src="images/web-development.png" alt="">
-          <h3>Web Developer.</h3>
+          <h3>Web Development.</h3>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0"
               aria-valuemax="30"></div>
@@ -131,7 +207,7 @@
           <div class="card-body">
             <p class="card-text">Key-logger is a program that capture all keyboard keys on your system and send them by
               email.</p>
-            <span class="badge bg-primary">python</span>
+            <span class="badge bg-primary">python 3</span>
           </div>
         </div>
       </div>
@@ -143,11 +219,9 @@
             <source src="videos/reverse_backdoor.mp4" type="video/mp4" />
           </video>
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's
-              content.</p>
-            <span class="badge bg-primary">python</span>
-            <span class="badge bg-primary">subprocess</span>
+            <p class="card-text">This reverse Backdoor helped me to understand so many things like to send data between
+              2 computers.</p>
+            <span class="badge bg-primary">python 3</span>
           </div>
         </div>
       </div>
@@ -155,13 +229,13 @@
       <div class="skill-item col-lg-4">
         <div class="card">
           <h5 class="card-title">Portfolio Website</h5>
-          <img src="images/code.png" class="card-img-top" alt="...">
+          <img src="images/personal_web.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's
-              content.</p>
-            <span class="badge bg-primary"> html</span>
-            <span class="badge bg-primary"></span>
+            <p class="card-text">I created this Portfolio Website to help me show-case my skills along with what i do
+              everyday.</p>
+            <span class="badge bg-primary">html</span>
+            <span class="badge bg-primary">Bootstrap</span>
+            <span class="badge bg-primary">Css</span>
           </div>
         </div>
       </div>
@@ -181,7 +255,7 @@
         techniques. I am driven by my goals achievement daily and made it a special habit to help me deliver
         expectations
         on time. I am limitless i crush my goals learning new things everyday.</p>
-      <p class="about-text">I believe in myself.</p>
+      <p class="about-text">I believe that one day i will make change in tech life.</p>
     </div>
     </div>
   </section>
@@ -190,11 +264,12 @@
   <!-- Footer -->
   <section id="footer">
     <div class="container-fluid">
-      <a class="social-handle" href="#"><i class="fa-brands fa-linkedin">  Linkedin</i></a>
-      <a class="social-handle" href="#"><i class="fa-brands fa-twitter-square">  Twitter</i></a>
-      <a class="social-handle" href="#"><i class="fa-brands fa-github"></i>  Github</a>
-      <a class="social-handle" href="#"><i class="fa-brands fa-instagram-square">  Intsgram</i></a>
+      <a class="social-handle" href="#"><i class="fa-brands fa-linkedin"> Linkedin</i></a>
+      <a class="social-handle" href="#"><i class="fa-brands fa-twitter-square"> Twitter</i></a>
+      <a class="social-handle" href="#"><i class="fa-brands fa-github"></i> Github</a>
+      <a class="social-handle" href="#"><i class="fa-brands fa-instagram-square"> Intsgram</i></a>
     </div>
+    <p class="copyright">&copy; Choenyana Edwin</p>
   </section>
 </body>
 
